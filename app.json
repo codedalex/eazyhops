@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "uber",
-    "slug": "uber",
+    "name": "eazy-hops",
+    "slug": "eazy-hops",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.eazyhops"
     },
     "web": {
       "bundler": "metro",
@@ -30,7 +31,7 @@
       [
         "expo-router",
         {
-          "origin": "https://uber.dev/"
+          "origin": "https://eazy-hops.dev/"
         }
       ]
     ],

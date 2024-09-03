@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Image, Text, View } from "react-native";
 
 import { icons } from "@/constants";

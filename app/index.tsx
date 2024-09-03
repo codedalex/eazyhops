@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 import { useAuth } from "@clerk/clerk-expo";
 import { Redirect } from "expo-router";
 

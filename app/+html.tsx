@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { ScrollViewStyleReset } from "expo-router/html";
 import { type PropsWithChildren } from "react";
 
@@ -39,4 +40,5 @@ body {
   body {
     background-color: #000;
   }
+// eslint-disable-next-line prettier/prettier
 }`;

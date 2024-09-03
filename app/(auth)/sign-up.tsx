@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useSignUp } from "@clerk/clerk-expo";
 import { Link, router } from "expo-router";
 import { useState } from "react";

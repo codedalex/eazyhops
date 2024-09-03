@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Stack } from "expo-router";
 
 const Layout = () => {

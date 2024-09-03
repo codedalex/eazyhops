@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { View, Image } from "react-native";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 

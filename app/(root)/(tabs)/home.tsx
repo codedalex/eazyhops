@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useUser } from "@clerk/clerk-expo";
 import { useAuth } from "@clerk/clerk-expo";
 import * as Location from "expo-location";
@@ -42,24 +43,34 @@ const Home = () => {
 
   useEffect(() => {
     (async () => {
-      let { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== "granted") {
-        setHasPermission(false);
-        return;
+      try {
+        let { status } = await Location.requestForegroundPermissionsAsync();
+        if (status !== "granted") {
+          setHasPermission(false);
+          return;
+        }
+
+        setHasPermission(true);
+
+        let location = await Location.getCurrentPositionAsync({});
+
+        const address = await Location.reverseGeocodeAsync({
+          latitude: location.coords?.latitude!,
+          longitude: location.coords?.longitude!,
+        });
+
+        if (address.length > 0) {
+          setUserLocation({
+            latitude: location.coords?.latitude,
+            longitude: location.coords?.longitude,
+            address: `${address[0].name}, ${address[0].region}`,
+          });
+        } else {
+          console.error("No address found for the current location.");
+        }
+      } catch (error) {
+        console.error("Error fetching location:", error);
       }
-
-      let location = await Location.getCurrentPositionAsync({});
-
-      const address = await Location.reverseGeocodeAsync({
-        latitude: location.coords?.latitude!,
-        longitude: location.coords?.longitude!,
-      });
-
-      setUserLocation({
-        latitude: location.coords?.latitude,
-        longitude: location.coords?.longitude,
-        address: `${address[0].name}, ${address[0].region}`,
-      });
     })();
   }, []);
 
@@ -69,7 +80,6 @@ const Home = () => {
     address: string;
   }) => {
     setDestinationLocation(location);
-
     router.push("/(root)/find-ride");
   };
 

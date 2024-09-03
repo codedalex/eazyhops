@@ -12,7 +12,6 @@
     <img src="https://img.shields.io/badge/-Stripe-black?style=for-the-badge&logoColor=white&logo=stripe&color=008CDD" alt="stripe" />
   </div>
 
-
 <h3 align="center">Full Stack Uber Clone</h3>
 
    <div align="center">
@@ -539,14 +538,14 @@ export const onboarding = [
         id: 1,
         title: "The perfect ride is just a tap away!",
         description:
-            "Your journey begins with Ryde. Find your ideal ride effortlessly.",
+            "Your journey begins with EazyHops. Find your ideal ride effortlessly.",
         image: images.onboarding1,
     },
     {
         id: 2,
-        title: "Best car in your hands with Ryde",
+        title: "Best car in your hands with EazyHops",
         description:
-            "Discover the convenience of finding your perfect ride with Ryde",
+            "Discover the convenience of finding your perfect ride with EazyHops",
         image: images.onboarding2,
     },
     {

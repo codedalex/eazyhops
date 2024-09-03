@@ -1,7 +1,8 @@
+/* eslint-disable prettier/prettier */
 import { TextInputProps, TouchableOpacityProps } from "react-native";
 
 declare interface Driver {
-  id: number;
+  driver_id: number;
   first_name: string;
   last_name: string;
   profile_image_url: string;
@@ -44,7 +45,7 @@ declare interface Ride {
   fare_price: number;
   payment_status: string;
   driver_id: number;
-  user_id: string;
+  user_email: string;
   created_at: string;
   driver: {
     first_name: string;

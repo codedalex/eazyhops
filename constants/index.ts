@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import arrowDown from "@/assets/icons/arrow-down.png";
 import arrowUp from "@/assets/icons/arrow-up.png";
 import backArrow from "@/assets/icons/back-arrow.png";
@@ -76,14 +77,14 @@ export const onboarding = [
     id: 1,
     title: "The perfect ride is just a tap away!",
     description:
-      "Your journey begins with Ryde. Find your ideal ride effortlessly.",
+      "Your journey begins with EazyHops. Find your ideal ride effortlessly.",
     image: images.onboarding1,
   },
   {
     id: 2,
-    title: "Best car in your hands with Ryde",
+    title: "Best car in your hands with EazyHops",
     description:
-      "Discover the convenience of finding your perfect ride with Ryde",
+      "Discover the convenience of finding your perfect ride with EazyHops",
     image: images.onboarding2,
   },
   {
